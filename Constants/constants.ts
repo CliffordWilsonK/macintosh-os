@@ -327,7 +327,7 @@ export const launchpadApps: LaunchpadApp[] = [
         src: "/images/icons/linkedin.png",
         alt: "LinkedIn",
         title: "LinkedIn",
-        url: "https://www.linkedin.com/fabiconcept/",
+        url: "https://www.linkedin.com/in/fabiconcept/",
     },
     {
         id: "launchpad-app-7",
