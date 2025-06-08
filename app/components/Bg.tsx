@@ -17,7 +17,7 @@ interface BgProps { }
 
 export default function Bg({ }: BgProps) {
     const { theme } = useAppStore()
-    const name = "FaVouR ToCHuKWu AJoKuBi";
+    const name = "FaVouR AJoKuBi";
     const nameArray = useMemo(() => name.split(""), [name]);
 
     return (
