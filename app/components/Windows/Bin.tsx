@@ -41,7 +41,7 @@ export default function Bin() {
                     draggable
                     className="flex flex-col gap-2 cursor-pointer items-center group p-1 rounded-lg"
                 >
-                    <div className="p-1 rounded-lg group-focus:bg-foreground/5 group-hover:bg-foreground/2 w-[100px]">
+                    <div className="p-1 rounded-lg group-focus:bg-foreground/5 group-hover:bg-foreground/2 w-[100px] border border-transparent group-focus:border-blue-600 transition-all duration-300">
                         <Image
                             src={item.icon}
                             alt={item.name}
