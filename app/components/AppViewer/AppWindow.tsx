@@ -219,7 +219,7 @@ const DraggableBox = ({
       onClick={() => reorderToTop(windowProps.id)}
       tabIndex={-1} // Make container focusable but not in tab order
     >
-      <div className="relative min-h-full overflow-hidden">
+      <div className="relative min-h-full overflow-hidden pb-10">
         <div className="absolute top-0 left-0 w-full h-full with-lg backdrop-blur-[4px] -z-10"></div>
       {/* Resize handles */}
       {!isMaximized && (

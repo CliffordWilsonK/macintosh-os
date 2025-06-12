@@ -8,13 +8,15 @@ import { useEffect } from "react";
 import MobileViewNotice from "./MobileViewNotice";
 import { useWindowSize } from "react-use";
 import { motion } from "framer-motion";
+import LiquidGlassCursor from "./Windows/components/LiquidGlassCursor";
 
 export default function AppThemeProvider({ children, className }: { children: React.ReactNode, className?: string }) {
-    const { theme, allowCookies, timeFormat, setTheme, setAllowCookies, setTimeFormat } = useAppStore();
+    const { theme, allowCookies, timeFormat, liquidGlassCursor, setTheme, setAllowCookies, setTimeFormat, setLiquidGlassCursor } = useAppStore();
     const [storedAppSettings, setStoredAppSettings] = useLocalStorage("app-settings", {
         theme: "dark",
         timeFormat: "24",
         allowCookies: false,
+        liquidGlassCursor: false,
         isDefault: false
     });
 
@@ -28,6 +30,7 @@ export default function AppThemeProvider({ children, className }: { children: Re
             setTheme(storedAppSettings.theme as "dark" | "light");
             setAllowCookies(storedAppSettings.allowCookies);
             setTimeFormat(storedAppSettings.timeFormat as "24" | "12");
+            setLiquidGlassCursor(storedAppSettings.liquidGlassCursor);
             return;
         }
         setTheme(systemTheme);
@@ -35,11 +38,12 @@ export default function AppThemeProvider({ children, className }: { children: Re
 
     useEffect(() => {
         if (!allowCookies) return;
-        setStoredAppSettings({ theme, allowCookies, timeFormat, isDefault: false });
-    }, [theme, allowCookies, timeFormat]);
+        setStoredAppSettings({ theme, allowCookies, timeFormat, liquidGlassCursor, isDefault: false });
+    }, [theme, allowCookies, timeFormat, liquidGlassCursor]);
 
     return (
         <body className={clsx(theme === "dark" ? "app-dark" : "app-light", className)}>
+            {liquidGlassCursor && <LiquidGlassCursor />}
             <Toaster position="top-right" reverseOrder={false} toastOptions={{
                 style: {
                     background: 'rgba(0, 0, 0, 0.75)',

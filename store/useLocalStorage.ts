@@ -11,7 +11,7 @@ type SetValue<T> = React.Dispatch<React.SetStateAction<T & { isDefault: boolean 
 export function useLocalStorage<T>(
     key: string,
     initialValue: T & { isDefault: boolean }
-): [T & { isDefault: boolean }, SetValue<T & { isDefault: boolean }>] {
+): [T & { isDefault: boolean }, SetValue<T & { isDefault: boolean }>, () => void] {
     initialValue = {
         ...initialValue,
         isDefault: true
@@ -48,9 +48,18 @@ export function useLocalStorage<T>(
         }
     };
 
+    const deleteValue = () => {
+        if (typeof window !== 'undefined') {
+            console.log(key);
+            console.log("deleted", window.localStorage.removeItem(key));
+        }
+    };
+
     useEffect(() => {
-        setStoredValue(readValue() as T & { isDefault: boolean });
+        if (typeof window === 'undefined') return;
+        const storedValue = readValue();
+        setStoredValue(storedValue as T & { isDefault: boolean });
     }, []);
 
-    return [storedValue, setValue];
+    return [storedValue, setValue, deleteValue];
 }

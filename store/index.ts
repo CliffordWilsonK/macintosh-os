@@ -7,6 +7,8 @@ interface AppState {
     setTimeFormat: (timeFormat: "12" | "24") => void;
     allowCookies: boolean;
     setAllowCookies: (allowCookies: boolean) => void;
+    liquidGlassCursor: boolean;
+    setLiquidGlassCursor: (liquidGlassCursor: boolean) => void;
 }
 
 const useAppStore = create<AppState>((set) => ({
@@ -19,6 +21,8 @@ const useAppStore = create<AppState>((set) => ({
     setTimeFormat: (timeFormat) => set({ timeFormat }),
     allowCookies: false,
     setAllowCookies: (allowCookies) => set({ allowCookies }),
+    liquidGlassCursor: false,
+    setLiquidGlassCursor: (liquidGlassCursor) => set({ liquidGlassCursor }),
 }));
 
 export default useAppStore;
