@@ -299,7 +299,7 @@ const DraggableBox = ({
           transition={{ duration: 0.15, delay: 0.05, ease: "easeOut" }}
           className={clsx(
             'max-h-full overflow-y-auto launchpad-container pb-4 flex-1',
-            windowProps.windowType === 'spotify' && 'bg-gradient-to-b from-[rgba(248,216,160)]/10 via-[rgba(248,216,160)]/5 to-background',
+            windowProps.windowType === 'spotify' && 'min-h-full bg-gradient-to-b from-[rgba(248,216,160)]/10 via-[rgba(248,216,160)]/5 to-background',
             (windowProps.windowType !== 'spotify') && 'p-2'
           )}
         >
