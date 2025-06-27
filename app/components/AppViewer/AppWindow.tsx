@@ -24,6 +24,7 @@ import Finder from '../Windows/Finder';
 import Bin from '../Windows/Bin';
 import useSoundEffect from '@useverse/usesoundeffect';
 import { useFocusTrap } from '@/util/Hooks/useFocusTrap';
+import Test from '../Windows/Test';
 
 const EDGE_PADDING = 2;
 const EDGE_THRESHOLD = 20;
@@ -195,6 +196,8 @@ const DraggableBox = ({
         return <Finder />;
       case 'bin':
         return <Bin />;
+      case 'test':
+        return <Test />;
       default:
         return <div>Window not found</div>;
     }

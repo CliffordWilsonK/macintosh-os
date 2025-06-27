@@ -12,6 +12,7 @@ export enum WindowType {
     Downloads = "downloads",
     Bin = "bin",
     Photos = "photos",
+    Test = "test"
 }
 
 export interface IconProps {
