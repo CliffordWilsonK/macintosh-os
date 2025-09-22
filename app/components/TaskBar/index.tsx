@@ -54,7 +54,7 @@ const SortableIcon = ({ id, ...props }: IconProps & { id: string }) => {
     };
 
     return (
-        <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+        <div ref={setNodeRef} className="peer hover:scale-105" style={style} {...attributes} {...listeners}>
             <Icon {...props} id={id} />
         </div>
     );
@@ -133,7 +133,7 @@ export default function TaskBar() {
             <div 
                 className={clsx("p-2 relative")}
             >
-                <div className="absolute top-0 left-0 w-full h-full with-lg backdrop-blur-[4px]"></div>
+                <div className="absolute top-0 left-0 w-full h-full rounded-3xl overflow-hidden with-lg backdrop-blur-[4px]"></div>
                 <div className="flex items-stretch gap-2">
                     <DndContext
                         sensors={sensors}
