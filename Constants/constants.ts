@@ -12,7 +12,8 @@ export enum WindowType {
     Downloads = "downloads",
     Bin = "bin",
     Photos = "photos",
-    Test = "test"
+    Test = "test",
+    BezierClipPath = "bezierclippath"
 }
 
 export interface IconProps {
@@ -72,6 +73,13 @@ export const icons: IconProps[] = [
         alt: "Spotify",
         tooltip: "Spotify",
         windowType: WindowType.Spotify,
+    },
+    {
+        id: "icon-8",
+        src: "/images/icons/draw.png",
+        alt: "Bézier Clip Path",
+        tooltip: "Bézier",
+        windowType: WindowType.BezierClipPath,
     }
 ]
 
@@ -289,63 +297,70 @@ export interface LaunchpadApp {
 
 export const launchpadApps: LaunchpadApp[] = [
     {
-        id: "launchpad-app-1",
+        id: "launchpad-app-facebook",
         src: "/images/icons/facebook.png",
         alt: "Facebook",
         title: "Facebook",
         url: "https://www.facebook.com/fabiconcept",
     },
     {
-        id: "launchpad-app-2",
+        id: "launchpad-app-instagram",
         src: "/images/icons/instagram.png",
         alt: "Instagram",
         title: "Instagram",
         url: "https://www.instagram.com/fabiconcept_ng",
     },
     {
-        id: "launchpad-app-3",
+        id: "launchpad-app-threads",
+        src: "/images/icons/threads.png",
+        alt: "Threads",
+        title: "Threads",
+        url: "https://www.threads.com/@fabiconcept_ng",
+    },
+    {
+        id: "launchpad-app-x",
         src: "/images/icons/x.png",
         alt: "X",
         title: "X",
         url: "https://www.x.com/goat_h2o",
     },
     {
-        id: "launchpad-app-4",
+        id: "launchpad-app-whatsapp",
         src: "/images/icons/whatsapp.png",
         alt: "WhatsApp",
         title: "WhatsApp",
         url: "https://wa.link/78bp13",
     },
     {
-        id: "launchpad-app-5",
+        id: "launchpad-app-github",
         src: "/images/icons/github.png",
         alt: "GitHub",
         title: "GitHub",
         url: "https://www.github.com/fabiconcept",
     },
     {
-        id: "launchpad-app-6",
+        id: "launchpad-app-linkedin",
         src: "/images/icons/linkedin.png",
         alt: "LinkedIn",
         title: "LinkedIn",
         url: "https://www.linkedin.com/in/fabiconcept/",
     },
     {
-        id: "launchpad-app-7",
+        id: "launchpad-app-dribbble",
         src: "/images/icons/dribble.png",
         alt: "Dribbble",
         title: "Dribbble",
         url: "https://www.dribbble.com/fabiconcept",
     },
     {
-        id: "launchpad-app-8",
+        id: "launchpad-app-room",
         src: "/images/icons/secret.png",
         alt: "Secret",
         title: "Secret Room",
         url: "https://secret-room-orpin.vercel.app/ginvite/global-98cd99b7-bd7b-4942-a6b0-c16feff7f39b",
     },
     {
-        id: "launchpad-app-9",
+        id: "launchpad-app-safari",
         src: "/images/icons/safari.png",
         alt: "Safari",
         title: "Safari",
