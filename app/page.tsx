@@ -1,14 +1,16 @@
 import AppWindows from './components/AppViewer/AppWindows';
 import Bg from './components/Bg';
+import Desktop from './components/Desktop/Index';
 import Header from './components/Header';
-import TaskBar from './components/TaskBar';
+import Dock from './components/TaskBar';
 
 export default function page() {
   return (
-    <div className="relative">
+    <div className="relative h-screen w-full">
         <Bg />
+        <Desktop />
         <Header />
-        <TaskBar />
+        <Dock />
         <AppWindows />
     </div>
   )

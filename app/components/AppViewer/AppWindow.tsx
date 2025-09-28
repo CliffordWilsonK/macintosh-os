@@ -9,7 +9,7 @@ import {
   DragEndEvent,
 } from '@dnd-kit/core';
 import useAppWindows, { AppWindow } from '@/store/useAppWindows';
-import { BOX_HEIGHT, BOX_WIDTH } from '@/Constants/constants';
+import { BOX_HEIGHT, BOX_WIDTH, launchpadApps } from '@/Constants/constants';
 import { LucideMaximize2, LucideMinus, LucideX } from 'lucide-react';
 import Spotify from '../Windows/Spotify';
 import LaunchPad from '../Windows/LaunchPad';
@@ -181,7 +181,7 @@ const DraggableBox = ({
       case 'spotify':
         return <Spotify />;
       case 'launchpad':
-        return <LaunchPad />;
+        return <LaunchPad apps={launchpadApps} />;
       case 'terminal':
         return <Terminal />;
       case 'mail':
@@ -419,7 +419,7 @@ const DraggableContainer = ({ windowProps }: { windowProps: AppWindow }) => {
       opacity: 0,
       y: 30,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 25,
       },
@@ -429,7 +429,7 @@ const DraggableContainer = ({ windowProps }: { windowProps: AppWindow }) => {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 25,
       },
@@ -439,7 +439,7 @@ const DraggableContainer = ({ windowProps }: { windowProps: AppWindow }) => {
       opacity: 0,
       y: 30,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 20,
       },

@@ -33,9 +33,9 @@ export const AppViewerProvider = ({ children }: { children: React.ReactNode }) =
   return (
     <AppViewerContext.Provider value={{ containerDimensions }}>
       <div className={clsx(
-          "fixed top-0 left-0 h-screen w-screen",
-          windows.filter((window) => !window.isMinimized).length > 0 ? "" : "pointer-events-none"
-        )}>
+        "fixed top-0 left-0 h-screen w-screen z-50",
+        windows.filter((window) => !window.isMinimized).length > 0 ? "" : "pointer-events-none"
+      )}>
         <div className="relative h-full w-full" ref={containerRef}>
           {children}
         </div>

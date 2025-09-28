@@ -2,10 +2,11 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { Righteous } from "next/font/google";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { quotesByChar } from "@/Constants/constants";
 import useAppStore from "@/store";
 import { motion } from "framer-motion";
+import useSoundEffect from "@useverse/usesoundeffect";
 
 const righteous = Righteous({
     subsets: ["latin"],
@@ -19,6 +20,16 @@ export default function Bg({ }: BgProps) {
     const { theme } = useAppStore()
     const name = "FaVouR AJoKuBi";
     const nameArray = useMemo(() => name.split(""), [name]);
+
+    const startupSound = useSoundEffect("/audio/chime.mp3", {
+        volume: 0.15,
+    });
+
+    useEffect(() => {
+        setTimeout(() => {
+            startupSound.play();
+        }, 2000);
+    }, []);
 
     return (
         <div className="fixed inset-0">

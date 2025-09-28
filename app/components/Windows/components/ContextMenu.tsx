@@ -32,12 +32,17 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
   useEffect(() => {
     if (!visible || !position) {
       setIsAnimating(false);
+      setAdjustedPosition(null);
       return;
     }
 
-    // Start animation immediately when position is set
+    // Set position first, then start animation after a small delay
     setAdjustedPosition(position);
-    setIsAnimating(true);
+    
+    // Use requestAnimationFrame to ensure position is set before animation starts
+    requestAnimationFrame(() => {
+      setIsAnimating(true);
+    });
 
     // If menu ref is available, adjust position for viewport bounds
     if (menuRef.current) {
@@ -92,7 +97,7 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
     };
   }, [visible, onClose]);
 
-  if (!visible || !adjustedPosition) return null;
+  if (!visible || !adjustedPosition || !position) return null;
 
   const handleItemClick = (item: ContextMenuItem) => {
     if (item.disabled) return;
@@ -103,10 +108,10 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
   return createPortal(
     <div
       ref={menuRef}
-      className={`fixed z-50 min-w-[180px] max-w-[280px] bg-background/10 backdrop-blur-[4px] border border-gray-200/60 rounded-lg shadow-2xl py-1 transition-all duration-150 ease-out ${
+      className={`fixed z-50 min-w-[180px] max-w-[280px] bg-background/50 backdrop-blur-[8px] border border-gray-200/30 rounded-lg shadow-2xl py-1 transition-all duration-200 ease-out ${
         isAnimating 
-          ? 'opacity-100 scale-100 translate-y-0' 
-          : 'opacity-0 scale-95 translate-y-2'
+          ? 'opacity-100 scale-100' 
+          : 'opacity-0 scale-95'
       }`}
       style={{
         left: adjustedPosition.x,
@@ -135,8 +140,8 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
               ${item.disabled
                 ? "text-gray-400 cursor-not-allowed"
                 : item.destructive
-                ? "text-red-600 hover:bg-red-50/10 active:bg-red-100/10"
-                : "hover:bg-blue-50/10 active:bg-blue-100/10"
+                  ? "text-red-600 hover:bg-red-50/10 active:bg-red-100/10"
+                  : "hover:bg-blue-50/10 active:bg-blue-100/10"
               }
               ${!item.disabled && "hover:outline-none focus:outline-none"}
             `}
@@ -168,15 +173,15 @@ export const useContextMenu = () => {
   const showContextMenu = (event: React.MouseEvent) => {
     event.preventDefault();
     event.stopPropagation();
-    
+
     // Get more precise positioning
     const rect = event.currentTarget.getBoundingClientRect();
-    
+
     // Position the menu slightly offset from the click point for better UX
     setContextMenu({
-      position: { 
+      position: {
         x: event.clientX + 4, // Small offset to avoid cursor overlap
-        y: event.clientY + 4 
+        y: event.clientY + 4
       },
       visible: true,
     });

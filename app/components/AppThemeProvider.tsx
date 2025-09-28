@@ -4,20 +4,24 @@ import useAppStore from "@/store";
 import { Toaster } from "react-hot-toast";
 import clsx from "clsx";
 import { useLocalStorage } from "@/store/useLocalStorage";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import MobileViewNotice from "./MobileViewNotice";
 import { useWindowSize } from "react-use";
 import { motion } from "framer-motion";
 import LiquidGlassCursor from "./Windows/components/LiquidGlassCursor";
 
 export default function AppThemeProvider({ children, className }: { children: React.ReactNode, className?: string }) {
-    const { theme, allowCookies, timeFormat, liquidGlassCursor, setTheme, setAllowCookies, setTimeFormat, setLiquidGlassCursor } = useAppStore();
+    const { theme, allowCookies, timeFormat, liquidGlassCursor, sentToDesktop, setTheme, setAllowCookies, setTimeFormat, setLiquidGlassCursor, setSentToDesktop } = useAppStore();
     const [storedAppSettings, setStoredAppSettings] = useLocalStorage("app-settings", {
         theme: "dark",
         timeFormat: "24",
         allowCookies: false,
         liquidGlassCursor: false,
         isDefault: false
+    });
+    const [storedSentToDesktop, setStoredSentToDesktop] = useLocalStorage("sentToDesktopItems", {
+        items: [] as any[],
+        isDefault: true
     });
 
     const { width } = useWindowSize();
@@ -36,10 +40,29 @@ export default function AppThemeProvider({ children, className }: { children: Re
         setTheme(systemTheme);
     }, [storedAppSettings]);
 
+    // Hydrate sentToDesktop from localStorage only once to avoid save/load loops
+    const hasHydratedSentRef = useRef(false);
+    useEffect(() => {
+        if (hasHydratedSentRef.current) return;
+        if (storedSentToDesktop.items !== undefined) {
+            setSentToDesktop(storedSentToDesktop.items);
+            hasHydratedSentRef.current = true;
+        }
+    }, [storedSentToDesktop]);
+
     useEffect(() => {
         if (!allowCookies) return;
         setStoredAppSettings({ theme, allowCookies, timeFormat, liquidGlassCursor, isDefault: false });
     }, [theme, allowCookies, timeFormat, liquidGlassCursor]);
+
+    useEffect(() => {
+        if (!allowCookies) {
+            console.log('⚠️ Cookies disabled - sentToDesktop changes will not be persisted:', sentToDesktop);
+            return;
+        }
+        console.log('💾 Saving sentToDesktop to localStorage:', sentToDesktop);
+        setStoredSentToDesktop(prev => ({ ...prev, items: sentToDesktop }));
+    }, [sentToDesktop, allowCookies]);
 
     return (
         <body className={clsx(theme === "dark" ? "app-dark" : "app-light", className)}>

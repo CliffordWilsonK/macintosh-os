@@ -12,10 +12,10 @@ import { useOnlineStatus } from "@/util/Hooks/useOnlineStatus";
 
 export default function Header() {
     const linkHoverSound = useSoundEffect("/audio/link-hover.mp3", {
-        volume: 0.025,
+        volume: 0.15,
     });
     const clickSound = useSoundEffect("/audio/mouse-click.mp3", {
-        volume: 0.1,
+        volume: 0.5,
     });
 
     const { timeFormat } = useAppStore();
@@ -106,7 +106,10 @@ export default function Header() {
                                     "flex items-center gap-1 cursor-pointer group",
                                     isChecking ? "animate-pulse" : "animate-none"
                                 )}
-                                onClick={refresh}
+                                onClick={()=>{
+                                    refresh();
+                                    clickSound.play();
+                                }}
                                 title={`Connection: ${connectionStatus}${isChecking ? ' (checking...)' : ''} - Click to refresh`}
                             >
                                 {connectionStatus === 'online' ? (
