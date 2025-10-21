@@ -1,8 +1,8 @@
 # 🖥️ Macintosh‑OS
 
-[![Stars](https://img.shields.io/github/stars/fabiconcept/macintosh-os?style=social)](https://github.com/fabiconcept/macintosh-os)
-[![Forks](https://img.shields.io/github/forks/fabiconcept/macintosh-os?style=social)](https://github.com/fabiconcept/macintosh-os/network)
-[![License](https://img.shields.io/github/license/fabiconcept/macintosh-os)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/CliffordWilsonK/macintosh-os?style=social)](https://github.com/CliffordWilsonK/macintosh-os)
+[![Forks](https://img.shields.io/github/forks/CliffordWilsonK/macintosh-os?style=social)](https://github.com/CliffordWilsonK/macintosh-os/network)
+[![License](https://img.shields.io/github/license/CliffordWilsonK/macintosh-os)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)]
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-blue?logo=tailwind-css&logoColor=white)]
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)]
@@ -60,7 +60,7 @@
 ### Quick Start
 
 ```bash
-git clone https://github.com/fabiconcept/macintosh-os.git
+git clone https://github.com/CliffordWilsonK/macintosh-os.git
 cd macintosh-os
 npm install       # or yarn install
 npm run dev       # or yarn dev
@@ -111,7 +111,8 @@ Contributions are welcome! Feel free to:
 ## ℹ️ License & Credits
 
 * **MIT License**
-* Built by **[fabiconcept](https://github.com/fabiconcept)** — inspired by classic Macintosh aesthetic
+* Forked and customized by **[CliffordWilsonK](https://github.com/CliffordWilsonK)**
+* Originally built by **[fabiconcept](https://github.com/fabiconcept)** — inspired by classic Macintosh aesthetic
 
 ---
 
@@ -123,4 +124,4 @@ Contributions are welcome! Feel free to:
 
 ---
 
-*Made with 💖 by fabiconcept — go ahead, bring retro to the web!*
+*Customized by CliffordWilsonK — Originally made with 💖 by fabiconcept*

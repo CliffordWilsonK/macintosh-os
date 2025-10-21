@@ -345,7 +345,7 @@ export default function Terminal() {
           <span className={clsx(
             "select-none",
             theme === "dark" ? "text-green-400" : "text-green-700"
-          )}>macbook@Fabiconcepts-Machine ~ %</span> {line.command}
+          )}>macbook@CliffordWilsonK-Machine ~ %</span> {line.command}
           {line.output && (
             <div className={clsx(
               "whitespace-pre-wrap",
@@ -360,7 +360,7 @@ export default function Terminal() {
         <span className={clsx(
             "select-none",
             theme === "dark" ? "text-green-400" : "text-green-700"
-        )}>macbook@Fabiconcepts-Machine ~ %</span>
+        )}>macbook@CliffordWilsonK-Machine ~ %</span>
         <input
           autoFocus
           type="text"

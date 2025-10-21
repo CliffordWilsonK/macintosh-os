@@ -62,26 +62,26 @@ export default function Header() {
                 <div className="absolute top-0 left-0 w-full h-full -z-10 with-lg backdrop-blur-[4px]"></div>
                 <div className="w-full flex items-center justify-between">
                     <Link
-                        href="https://fabiconcept.online"
+                        href="https://github.com/CliffordWilsonK"
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="Go to my main website"
+                        title="Go to my GitHub profile"
                         className="flex items-center gap-2 group"
                         onMouseEnter={() => linkHoverSound.play()}
                         onClick={() => clickSound.play()}
                     >
                         <div className="h-7 w-7 rounded-full grid place-items-center shadow-[0px_0px_5px] shadow-foreground/25 text-white bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700">
-                            <span className="drop-shadow-md inset-shadow text-sm font-semibold">FA</span>
+                            <span className="drop-shadow-md inset-shadow text-sm font-semibold">CW</span>
                         </div>
                         <p className={clsx(
                             "text-base font-medium relative",
                             "after:absolute after:-bottom-0.5 after:h-[1.5px] after:w-3 after:bg-foreground after:left-0",
                             "group-hover:after:w-full after:transition-all after:duration-300 group-hover:after:opacity-50"
-                        )}>Favour Tochukwu Ajokubi</p>
+                        )}>CliffordWilsonK</p>
                     </Link>
                     <div className="flex items-center gap-5">
                         <Link
-                            href="mailto:fabiconceptdev@gmail.com"
+                            href="mailto:your-email@example.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm group relative"
@@ -97,7 +97,7 @@ export default function Header() {
                                     size={15}
                                     className="text-foreground opacity-100 group-hover:opacity-80"
                                 />
-                                <span className="opacity-80 group-hover:opacity-100 font-medium">fabiconceptdev@gmail.com</span>
+                                <span className="opacity-80 group-hover:opacity-100 font-medium">your-email@example.com</span>
                             </p>
                         </Link>
                         <div className="flex items-center gap-2">

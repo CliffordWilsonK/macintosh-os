@@ -1,9 +1,9 @@
 export const metadata = {
-    title: "Favour Ajokubi | Full-Stack Developer & Web3 Explorer",
-    description: "Portfolio of Favour Tochukwu Ajokubi, a Nigerian software developer blending frontend flair with backend power. Passionate about building seamless web experiences and exploring Web3 innovations.",
+    title: "CliffordWilsonK | Developer Portfolio",
+    description: "Portfolio of CliffordWilsonK - A passionate developer creating innovative web experiences. Built with Next.js and inspired by classic Macintosh design.",
     keywords: [
-      "Favour Tochukwu Ajokubi",
-      "Favour Ajokubi",
+      "CliffordWilsonK",
+      "Clifford Wilson",
       "Frontend Developer",
       "Backend Developer",
       "Full-Stack Developer",
@@ -12,11 +12,8 @@ export const metadata = {
       "React",
       "Next.js",
       "Node.js",
-      "Solidity",
-      "Web3",
-      "Cold Hubs",
-      "Mono API",
-      "Nigerian Developer",
+      "Web Developer",
+      "Software Engineer",
       "Macintosh OS",
       "Classic Mac",
       "Mac OS",
@@ -30,9 +27,9 @@ export const metadata = {
       "System 7",
       "Classic Computing"
     ],
-    authors: [{ name: "Favour Tochukwu Ajokubi", url: "https://fabiconcept.online" }],
-    creator: "Favour Tochukwu Ajokubi",
-    publisher: "Favour Tochukwu Ajokubi",
+    authors: [{ name: "CliffordWilsonK", url: "https://github.com/CliffordWilsonK" }],
+    creator: "CliffordWilsonK",
+    publisher: "CliffordWilsonK",
     icons: {
       icon: '/favicons/android-chrome-192x192.png',
       shortcut: '/favicons/android-chrome-512x512.png',
@@ -46,19 +43,19 @@ export const metadata = {
     appleWebApp: {
       capable: true,
       statusBarStyle: "default" as const,
-      title: "Favour Ajokubi Portfolio | Macintosh OS",
+      title: "CliffordWilsonK Portfolio | Macintosh OS",
     },
     openGraph: {
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
-      description: "Crafting seamless digital experiences across frontend, backend, and Web3. Explore projects, contributions, and more.",
-      url: "https://macintosh.fabiconcept.online/",
-      siteName: "Favour Ajokubi Portfolio",
+      title: "CliffordWilsonK | Developer Portfolio",
+      description: "Explore my projects and contributions in this interactive Macintosh-inspired portfolio. Built with modern web technologies.",
+      url: "https://cliffordwilsonk.github.io/macintosh-os/",
+      siteName: "CliffordWilsonK Portfolio",
       images: [
         {
           url: "https://pickholder.sirv.com/Images/og-image.png", 
           width: 1200,
           height: 630,
-          alt: "Favour Ajokubi Portfolio Preview"
+          alt: "CliffordWilsonK Portfolio Preview"
         }
       ],
       locale: "en_US",
@@ -66,10 +63,10 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
-      description: "Building web & mobile apps with purpose. From Cold Hubs to Mono API, Favour crafts tech that makes a difference.",
-      creator: "@goat_h2o", 
+      title: "CliffordWilsonK | Developer Portfolio",
+      description: "An interactive portfolio showcasing my projects and skills. Built with Next.js and inspired by classic Macintosh design.",
+      creator: "@CliffordWilsonK", 
       images: ["https://pickholder.sirv.com/Images/og-image.png"] 
     },
-    metadataBase: new URL("https://macintosh.fabiconcept.online/")
+    metadataBase: new URL("https://cliffordwilsonk.github.io/macintosh-os/")
   };
