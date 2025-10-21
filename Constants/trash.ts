@@ -12,7 +12,7 @@ export const trash: Trash[] = [
         name: "My resume",
         icon: "/images/icons/pdf.png",
         downloadable: true,
-        downloadURL: "https://pickholder.sirv.com/folder/Favour%20Ajokubi.docx.pdf"
+        downloadURL: "https://example.com/your-resume.pdf"
     },
     {
         id: "trash-2",

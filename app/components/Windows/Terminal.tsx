@@ -98,16 +98,16 @@ export default function Terminal() {
     // const setLines = (lines: string[]) => {...}; // Function to update terminal lines
 
     // Basic system commands
-    if (normalizedCmd === 'whoami') return 'Favour Tochukwu Ajokobi';
+    if (normalizedCmd === 'whoami') return 'CliffordWilsonK';
     if (normalizedCmd === 'date') return new Date().toString();
-    if (normalizedCmd === 'pwd') return '/Users/favour';
+    if (normalizedCmd === 'pwd') return '/Users/cliffordwilsonk';
     if (normalizedCmd === 'hostname') return 'MacBook-Pro.local';
-    if (normalizedCmd === 'uname') return 'Fabiconcept';
-    if (normalizedCmd === 'who') return `Favour Tochukwu Ajokobi  console  ${new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })}`;
+    if (normalizedCmd === 'uname') return 'CliffordWilsonK';
+    if (normalizedCmd === 'who') return `CliffordWilsonK  console  ${new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })}`;
 
     // Different variations of uname
-    if (normalizedCmd === 'uname -a') return 'Fabiconcept MacBook-Pro.local 23.4.0 Fabiconcept Kernel Version 23.4.0: ... x86_64';
-    if (normalizedCmd === 'uname -s') return 'Fabiconcept';
+    if (normalizedCmd === 'uname -a') return 'CliffordWilsonK MacBook-Pro.local 23.4.0 CliffordWilsonK Kernel Version 23.4.0: ... x86_64';
+    if (normalizedCmd === 'uname -s') return 'CliffordWilsonK';
     if (normalizedCmd === 'uname -n') return 'MacBook-Pro.local';
     if (normalizedCmd === 'uname -r') return '23.4.0';
     if (normalizedCmd === 'uname -m') return 'x86_64';
