@@ -1,9 +1,8 @@
 export const metadata = {
-    title: "Favour Ajokubi | Full-Stack Developer & Web3 Explorer",
-    description: "Portfolio of Favour Tochukwu Ajokubi, a Nigerian software developer blending frontend flair with backend power. Passionate about building seamless web experiences and exploring Web3 innovations.",
+    title: "Clifford Wilson | Full-Stack Developer & Web3 Explorer",
+    description: "Portfolio of Clifford Wilson, a Ghanaian software developer blending frontend flair with backend power. Passionate about building seamless web experiences and exploring Web3 innovations.",
     keywords: [
-      "Favour Tochukwu Ajokubi",
-      "Favour Ajokubi",
+      "Clifford Wilson",
       "Frontend Developer",
       "Backend Developer",
       "Full-Stack Developer",
@@ -16,7 +15,7 @@ export const metadata = {
       "Web3",
       "Cold Hubs",
       "Mono API",
-      "Nigerian Developer",
+      "Ghanaian Developer",
       "Macintosh OS",
       "Classic Mac",
       "Mac OS",
@@ -30,9 +29,9 @@ export const metadata = {
       "System 7",
       "Classic Computing"
     ],
-    authors: [{ name: "Favour Tochukwu Ajokubi", url: "https://fabiconcept.online" }],
-    creator: "Favour Tochukwu Ajokubi",
-    publisher: "Favour Tochukwu Ajokubi",
+    authors: [{ name: "Clifford Wilson", url: "https://cliffordwilson.dev" }],
+    creator: "Clifford Wilson",
+    publisher: "Clifford Wilson",
     icons: {
       icon: '/favicons/android-chrome-192x192.png',
       shortcut: '/favicons/android-chrome-512x512.png',
@@ -49,16 +48,16 @@ export const metadata = {
       title: "Favour Ajokubi Portfolio | Macintosh OS",
     },
     openGraph: {
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
+      title: "Clifford Wilson | Full-Stack Developer & Web3 Explorer",
       description: "Crafting seamless digital experiences across frontend, backend, and Web3. Explore projects, contributions, and more.",
-      url: "https://macintosh.fabiconcept.online/",
-      siteName: "Favour Ajokubi Portfolio",
+      url: "https://macintosh.cliffordwilson.dev/",
+      siteName: "Clifford Wilson Portfolio",
       images: [
         {
           url: "https://pickholder.sirv.com/Images/og-image.png", 
           width: 1200,
           height: 630,
-          alt: "Favour Ajokubi Portfolio Preview"
+          alt: "Clifford Wilson Portfolio Preview"
         }
       ],
       locale: "en_US",
@@ -66,10 +65,10 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
-      description: "Building web & mobile apps with purpose. From Cold Hubs to Mono API, Favour crafts tech that makes a difference.",
+      title: "Clifford Wilson | Full-Stack Developer & Web3 Explorer",
+      description: "Building web & mobile apps with purpose. From Cold Hubs to Mono API, Clifford crafts tech that makes a difference.",
       creator: "@goat_h2o", 
       images: ["https://pickholder.sirv.com/Images/og-image.png"] 
     },
-    metadataBase: new URL("https://macintosh.fabiconcept.online/")
+    metadataBase: new URL("https://macintosh.cliffordwilson.dev/")
   };
