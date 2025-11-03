@@ -45,7 +45,7 @@ export const metadata = {
     appleWebApp: {
       capable: true,
       statusBarStyle: "default" as const,
-      title: "Favour Ajokubi Portfolio | Macintosh OS",
+      title: "Clifford Wilson Portfolio | Macintosh OS",
     },
     openGraph: {
       title: "Clifford Wilson | Full-Stack Developer & Web3 Explorer",
@@ -54,7 +54,7 @@ export const metadata = {
       siteName: "Clifford Wilson Portfolio",
       images: [
         {
-          url: "https://pickholder.sirv.com/Images/og-image.png", 
+          url: "https://techcosmocrat.sirv.com/Images/og-image.png", 
           width: 1200,
           height: 630,
           alt: "Clifford Wilson Portfolio Preview"
@@ -66,9 +66,9 @@ export const metadata = {
     twitter: {
       card: "summary_large_image",
       title: "Clifford Wilson | Full-Stack Developer & Web3 Explorer",
-      description: "Building web & mobile apps with purpose. From Cold Hubs to Mono API, Clifford crafts tech that makes a difference.",
+      description: "Building web & mobile apps with purpose. Clifford crafts tech that makes a difference.",
       creator: "@goat_h2o", 
-      images: ["https://pickholder.sirv.com/Images/og-image.png"] 
+      images: ["https://techcosmocrat.sirv.com/Images/og-image.png"] 
     },
     metadataBase: new URL("https://macintosh.cliffordwilson.dev/")
   };

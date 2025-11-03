@@ -20,11 +20,11 @@ export const languages: Language[] = [
         name: "PHP",
         icon: "/images/technologies/php2-svgrepo-com.svg",
     },
-    {
-        id: "laravel",
-        name: "Laravel",
-        icon: "/images/technologies/laravel-svgrepo-com.svg",
-    },
+    // {
+    //     id: "laravel",
+    //     name: "Laravel",
+    //     icon: "/images/technologies/laravel-svgrepo-com.svg",
+    // },
     {
         id: "node",
         name: "Node.js",
@@ -40,11 +40,11 @@ export const languages: Language[] = [
         name: "Redux",
         icon: "/images/technologies/redux-svgrepo-com.svg",
     },
-    {
-        id: "jest",
-        name: "Jest",
-        icon: "/images/technologies/jest-snapshot-svgrepo-com.svg",
-    },
+    // {
+    //     id: "jest",
+    //     name: "Jest",
+    //     icon: "/images/technologies/jest-snapshot-svgrepo-com.svg",
+    // },
     {
         id: "github",
         name: "GitHub",
