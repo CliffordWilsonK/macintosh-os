@@ -9,86 +9,59 @@ interface TopArtist {
 export const topArtists: TopArtist[] = [
     {
         id: "top-artist-1",
-        src: "/images/assets/kenny.jpeg",
-        alt: "Kungfu Kenny",
-        name: "Kendrick Lamar",
-        url: "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=fdf007d859194725",
+        src: "/images/assets/hulvey.jpeg",
+        alt: "Christopher Hulvey",
+        name: "Christopher Hulvey",
+        url: "https://open.spotify.com/artist/3zSrc5vUlUxyDdS0KrxFJO?si=dAti5ULWQtCn1EkH5d8zfw",
     },
     {
         id: "top-artist-2",
-        src: "/images/assets/jev.jpeg",
-        alt: "Jev",
-        name: "Jev.",
-        url: "https://open.spotify.com/artist/6OmxkansdRyVTvo6BpZzKF?si=2e8744e7c03044b0",
+        src: "/images/assets/forrest.jpeg",
+        alt: "Forrest Frank",
+        name: "Forrest Frank",
+        url: "https://open.spotify.com/artist/1scVfBymTr3CeZ4imMj1QJ?si=fpZ1OPuKTEaVprXCx0fayQ",
     },
     {
         id: "top-artist-3",
-        src: "/images/assets/don.jpeg",
-        alt: "Don",
-        name: "Don Toliver",
-        url: "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs?si=78eeddd2a6344e2d",
+        src: "/images/assets/lecrae.jpeg",
+        alt: "Lecrae",
+        name: "Lecrae",
+        url: "https://open.spotify.com/artist/1CFCsEqKrCyvAFKOATQHiW?si=9Drl9GFYQjmzNpJaSfjjsg",
     },
     {
         id: "top-artist-4",
-        src: "/images/assets/black.jpeg",
-        alt: "Black Sabbath",
-        name: "Black Sabbath",
-        url: "https://open.spotify.com/artist/5M52tdBnJaKSvOpJGz8mfZ?si=36559d566a074f2d"
+        src: "/images/assets/dunsin.jpeg",
+        alt: "Dunsin Oyekan",
+        name: "Dunsin Oyekan",
+        url: "https://open.spotify.com/artist/49BZ6sJNhvubVBsomYuLFM?si=xhD1J_7aT6qoQ_V0gQETuw"
     },
     {
         id: "top-artist-5",
-        src: "/images/assets/rema.jpeg",
-        alt: "HIM",
-        name: "Rema",
-        url: "https://open.spotify.com/artist/46pWGuE3dSwY3bMMXGBvVS?si=b5d8260d8da2405d"
+        src: "/images/assets/nf.jpeg",
+        alt: "NF",
+        name: "NF",
+        url: "https://open.spotify.com/artist/6fOMl44jA4Sp5b9PpYCkzz?si=N-hMxzsXSZu9BdBfaDfa0w"
     },
     {
         id: "top-artist-6",
-        src: "/images/assets/ye.jpeg",
-        alt: "Ye",
-        name: "Kanye West",
-        url: "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x?si=743578ae6af2453b"
+        src: "/images/assets/travis.jpeg",
+        alt: "Travis Greene",
+        name: "Travis Greene",
+        url: "https://open.spotify.com/artist/22JNV0JWTJkY1qzKJhxdRe?si=Lj6Y8bshRqK3WerTQ0FS2A"
     },
     {
         id: "top-artist-7",
-        src: "/images/assets/zay.jpeg",
-        alt: "Zay",
-        name: "Zay Dante",
-        url: "https://open.spotify.com/artist/6ZnL56xQE3lDTPRv6d0DIX?si=da981a43f4a644fd"
+        src: "/images/assets/chandler.jpeg",
+        alt: "Chandler Moore",
+        name: "Chandler Moore",
+        url: "https://open.spotify.com/artist/6y7frW1RUq3XBBXbYowVpk?si=evSK4Ar7Qu2fIlqlRcH-cw"
     },
     {
         id: "top-artist-8",
-        src: "/images/assets/denzel.webp",
-        alt: "Denzel",
-        name: "Denzel Kurry",
-        url: "https://open.spotify.com/artist/6fxyWrfmjcbj5d12gXeiNV?si=76d25ec8d23d472b"
+        src: "/images/assets/tori.webp",
+        alt: "Tori Kelly",
+        name: "Tori Kelly",
+        url: "https://open.spotify.com/artist/1vSN1fsvrzpbttOYGsliDr?si=JI3dRr3DTweiTH6tvKBmTA"
     },
-    {
-        id: "top-artist-9",
-        src: "/images/assets/carti.jpeg",
-        alt: "Carti",
-        name: "Playboi Carti",
-        url: "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD?si=efb750b7d60c49a3"
-    },
-    {
-        id: "top-artist-10",
-        src: "/images/assets/tyler.jpeg",
-        alt: "Tyler",
-        name: "Tyler, The Creator",
-        url: "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=f35e378d548743d1"
-    },
-    {
-        id: "top-artist-11",
-        src: "/images/assets/uche-yara.jpeg",
-        alt: "Uche Yara",
-        name: "Uche Yara",
-        url: "https://open.spotify.com/artist/2yOJnAGg41NV4aech301xj?si=HI-VGJHvSXqnNLjsTXV4cg"
-    },
-    {
-        id: "top-artist-12",
-        src: "/images/assets/braye.png",
-        alt: "Braye",
-        name: "Braye",
-        url: "https://open.spotify.com/artist/7wGQ0lfuBST1l3WyiJGVY0?si=lFlnv8KFRiaJNy0hbjGo4A"
-    }
+
 ]
