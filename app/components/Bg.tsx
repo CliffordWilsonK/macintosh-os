@@ -26,10 +26,49 @@ export default function Bg({}: BgProps) {
   });
 
   useEffect(() => {
-    setTimeout(() => {
-      startupSound.play();
+    let hasUserInteracted = false;
+    let shouldPlay = false;
+
+    const handleFirstInteraction = () => {
+      hasUserInteracted = true;
+      if (shouldPlay) {
+        try {
+          startupSound.play();
+        } catch (error) {
+          console.log("Startup sound playback failed:", error);
+        }
+      }
+      cleanup();
+    };
+
+    const cleanup = () => {
+      document.removeEventListener("click", handleFirstInteraction);
+      document.removeEventListener("keydown", handleFirstInteraction);
+      document.removeEventListener("touchstart", handleFirstInteraction);
+    };
+
+    // Set up startup sound timer
+    const timer = setTimeout(() => {
+      shouldPlay = true;
+      if (hasUserInteracted) {
+        try {
+          startupSound.play();
+        } catch (error) {
+          console.log("Startup sound playback failed:", error);
+        }
+      }
     }, 2000);
-  }, []);
+
+    // Listen for user interactions
+    document.addEventListener("click", handleFirstInteraction);
+    document.addEventListener("keydown", handleFirstInteraction);
+    document.addEventListener("touchstart", handleFirstInteraction);
+
+    return () => {
+      clearTimeout(timer);
+      cleanup();
+    };
+  }, [startupSound]);
 
   return (
     <div className="fixed inset-0">
