@@ -94,7 +94,7 @@ export const projects: Project[] = [
       id: "project-renteasy",
       name: "RentEasy Platform",
       type: "Personal Project",
-      src: "https://techcosmocrat.sirv.com/Images/Screenshot%202025-11-04%20222823.png",
+      src: "https://techcosmocrat.sirv.com/Images/renteasy.png",
       alt: "RentEasy Platform",
       url: "https://renteasy.gt.tc/",
       description: "A rental management platform that simplifies the process of listing, searching, and managing rental properties for landlords and tenants.",
