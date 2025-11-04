@@ -66,6 +66,22 @@ class GmailService {
   }
 }
 
-const gmailService = new GmailService(process.env.NEXT_PUBLIC_GMAIL_USER!, process.env.NEXT_PUBLIC_GMAIL_PASSWORD!);
+// Create a function to get or create the Gmail service instance
+let gmailServiceInstance: GmailService | null = null;
 
-export default gmailService;
+export function getGmailService(): GmailService {
+  if (!gmailServiceInstance) {
+    const email = process.env.GMAIL_USER;
+    const password = process.env.GMAIL_PASSWORD;
+    
+    if (!email || !password) {
+      throw new Error('Gmail credentials not found in environment variables');
+    }
+    
+    gmailServiceInstance = new GmailService(email, password);
+  }
+  
+  return gmailServiceInstance;
+}
+
+export default GmailService;

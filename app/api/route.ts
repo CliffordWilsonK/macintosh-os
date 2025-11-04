@@ -1,4 +1,4 @@
-import gmailService from '@/util/GmailService';
+import { getGmailService } from '@/util/GmailService';
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
@@ -31,6 +31,9 @@ export async function POST(req: NextRequest) {
                 { status: 400 }
             );
         }
+
+        // Get the Gmail service instance
+        const gmailService = getGmailService();
 
         // Send the email
         const result = await gmailService.send({
