@@ -32,7 +32,7 @@ export const graphicDesign: GraphicDesign[] = [
         id: "grid-a",
         src: "https://techcosmocrat.sirv.com/Images/Starry.jpg",
         alt: "Art 02",
-        name: "The Fallen One",
+        name: "Starry Night",
         url: "https://techcosmocrat.sirv.com/Images/Starry.jpg",
     }
 ]
