@@ -1,8 +1,8 @@
 # 🖥️ Macintosh‑OS
 
-[![Stars](https://img.shields.io/github/stars/fabiconcept/macintosh-os?style=social)](https://github.com/fabiconcept/macintosh-os)
-[![Forks](https://img.shields.io/github/forks/fabiconcept/macintosh-os?style=social)](https://github.com/fabiconcept/macintosh-os/network)
-[![License](https://img.shields.io/github/license/fabiconcept/macintosh-os)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/CliffordWilsonK/macintosh-os?style=social)](https://github.com/CliffordWilsonK/macintosh-os)
+[![Forks](https://img.shields.io/github/forks/CliffordWilsonK/macintosh-os?style=social)](https://github.com/CliffordWilsonK/macintosh-os/network)
+[![License](https://img.shields.io/github/license/CliffordWilsonK/macintosh-os)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)]
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-blue?logo=tailwind-css&logoColor=white)]
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)]
@@ -18,7 +18,7 @@
 
 ## 🔥 Live Demo
 
-👉 [macintosh-os.vercel.app](https://macintosh-os.vercel.app)
+👉 [techcosmocrat-macos.vercel.app](https://techcosmocrat-macos.vercel.app)
 
 ---
 
@@ -39,14 +39,14 @@
 
 ## ✨ Features
 
-| Feature                     | Description |
-|----------------------------|-------------|
-| 🎨 Authentic UI            | Faithfully mimics classic Mac desktop interface |
-| 🔲 Window Management       | Open, drag, resize, close app windows |
-| 📱 Fully Responsive        | Works smoothly on desktops, tablets, and phones |
-| ⚡ Performance Optimized   | Fast load times and smooth UX |
-| 🪄 Themes & Configurable   | Easily swap icons, wallpapers, fonts—make it yours |
-| 🧩 Portfolio-Ready         | Add custom apps/windows for projects, bio, resume, etc. |
+| Feature                  | Description                                             |
+| ------------------------ | ------------------------------------------------------- |
+| 🎨 Authentic UI          | Faithfully mimics classic Mac desktop interface         |
+| 🔲 Window Management     | Open, drag, resize, close app windows                   |
+| 📱 Fully Responsive      | Works smoothly on desktops, tablets, and phones         |
+| ⚡ Performance Optimized | Fast load times and smooth UX                           |
+| 🪄 Themes & Configurable | Easily swap icons, wallpapers, fonts—make it yours      |
+| 🧩 Portfolio-Ready       | Add custom apps/windows for projects, bio, resume, etc. |
 
 ---
 
@@ -54,7 +54,7 @@
 
 ### Prerequisites
 
-- Node.js v14 or later  
+- Node.js v14 or later
 - npm or Yarn
 
 ### Quick Start
@@ -64,7 +64,7 @@ git clone https://github.com/fabiconcept/macintosh-os.git
 cd macintosh-os
 npm install       # or yarn install
 npm run dev       # or yarn dev
-````
+```
 
 Then open `http://localhost:3000` in your browser and enjoy!
 
@@ -81,10 +81,10 @@ Then open `http://localhost:3000` in your browser and enjoy!
 
 ## 📌 Why Use This?
 
-* Stand out with a nostalgic, interactive portfolio
-* Showcase frontend skills and creativity
-* Learn and customize Next.js + Tailwind + TypeScript + Vercel
-* Impress recruiters with a unique user experience
+- Stand out with a nostalgic, interactive portfolio
+- Showcase frontend skills and creativity
+- Learn and customize Next.js + Tailwind + TypeScript + Vercel
+- Impress recruiters with a unique user experience
 
 ---
 
@@ -94,7 +94,7 @@ Want to turn the classic Mac into your personal playground?
 
 ✔️ **Fork**, **edit**, **deploy**, and **show it off**!
 
-Tag me or open an issue if you need help, or just to share screenshots — I’d *love* to see your spin on it 🙂
+Tag me or open an issue if you need help, or just to share screenshots — I’d _love_ to see your spin on it 🙂
 
 ---
 
@@ -102,25 +102,25 @@ Tag me or open an issue if you need help, or just to share screenshots — I’d
 
 Contributions are welcome! Feel free to:
 
-* 🚧 Submit bug reports or feature ideas
-* 🧑‍💻 Open pull requests
-* ⭐ Star the repo if you enjoyed it!
+- 🚧 Submit bug reports or feature ideas
+- 🧑‍💻 Open pull requests
+- ⭐ Star the repo if you enjoyed it!
 
 ---
 
 ## ℹ️ License & Credits
 
-* **MIT License**
-* Built by **[fabiconcept](https://github.com/fabiconcept)** — inspired by classic Macintosh aesthetic
+- **MIT License**
+- Built by **[Techcosmocrat](https://github.com/CliffordWilsonK)** — inspired by classic Macintosh aesthetic
 
 ---
 
 ## 📚 Resources & Inspiration
 
-* 💡 ReadMe best practices
-* 🎨 Retro design inspiration
-* 🛠️ Web dev + creative coding mashups
+- 💡 ReadMe best practices
+- 🎨 Retro design inspiration
+- 🛠️ Web dev + creative coding mashups
 
 ---
 
-*Made with 💖 by fabiconcept — go ahead, bring retro to the web!*
+_Made with 💖 by Techcosmocrat — go ahead, bring retro to the web!_
