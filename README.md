@@ -60,7 +60,7 @@
 ### Quick Start
 
 ```bash
-git clone https://github.com/fabiconcept/macintosh-os.git
+git clone https://github.com/CliffordWilsonK/macintosh-os.git
 cd macintosh-os
 npm install       # or yarn install
 npm run dev       # or yarn dev
